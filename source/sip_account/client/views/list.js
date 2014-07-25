@@ -1,6 +1,4 @@
-XT.extensions.sip_account.initList = function () {
-  
-  enyo.kind({
+enyo.kind({
     name: "XV.UserAccountList",
     kind: "XV.List",
     label: "_userAccounts".loc(),
@@ -26,6 +24,4 @@ XT.extensions.sip_account.initList = function () {
     ]
   });
   
-  XV.registerModelList("XM.UserAccountRelation", "XV.UserAccountList");
-  
-};
+XV.registerModelList("XM.UserAccountRelation", "XV.UserAccountList");
