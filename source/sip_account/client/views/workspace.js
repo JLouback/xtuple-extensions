@@ -1,6 +1,5 @@
 XT.extensions.sip_account.initWorkspace = function () {
 
-
 	var extensions = [
   		{kind: "onyx.GroupboxHeader", container: "mainGroup", content: "_sipAccount".loc()},
   		{kind: "XV.InputWidget", container: "mainGroup", attr: "uri" },
