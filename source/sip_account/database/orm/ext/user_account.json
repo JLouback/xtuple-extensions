@@ -23,14 +23,54 @@
         }
       },
       {
-        "name": "display_name",
+        "name": "displayName",
         "attr": {
           "type": "String",
           "column": "usrlitesip_name"
         }
       },
       {
-        "name": "sip_password",
+        "name": "sipPassword",
+        "attr": {
+          "type": "String",
+          "column": "usrlitesip_password"
+        }
+      }
+    ],
+    "isSystem": true
+  },
+  {
+    "context": "sip_account",
+    "nameSpace": "XM",
+    "type": "UserAccountRelation",
+    "table": "sa.usrlitesip",
+    "isExtension": true,
+    "isChild": false,
+    "comment": "Extended by Sip",
+    "relations": [
+      {
+        "column": "usrlitesip_usr_username",
+        "inverse": "username"
+      }
+    ],
+    "properties": [
+      {
+        "name": "uri",
+        "attr": {
+          "type": "String",
+          "column": "usrlitesip_uri",
+          "isNaturalKey": true
+        }
+      },
+      {
+        "name": "displayName",
+        "attr": {
+          "type": "String",
+          "column": "usrlitesip_name"
+        }
+      },
+      {
+        "name": "sipPassword",
         "attr": {
           "type": "String",
           "column": "usrlitesip_password"
