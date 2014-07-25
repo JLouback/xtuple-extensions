@@ -24,4 +24,4 @@ enyo.kind({
     ]
   });
   
-XV.registerModelList("XM.UserAccountRelation", "XV.UserAccountList");
+  XV.registerModelList("XM.UserAccountRelation", "XV.UserAccountList");
